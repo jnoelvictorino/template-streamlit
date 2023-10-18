@@ -1,0 +1,1774 @@
+bash: line 1: .devcontainer/startServer.sh: Permission denied
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.27.0.2:8501
+  External URL: http://122.54.221.250:8501
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.27.0.2:8501
+  External URL: http://122.54.221.250:8501
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.27.0.2:8501
+  External URL: http://27.110.147.242:8501
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.27.0.2:8501
+  External URL: http://122.54.221.250:8501
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.28.0.2:8501
+  External URL: http://122.54.221.250:8501
+
+2023-10-18 07:33:20.283 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:21.227 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:22.205 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:23.153 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:24.115 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:25.048 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:25.979 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:26.936 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:27.898 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:28.848 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:29.823 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:30.782 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:31.789 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:32.749 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:33.704 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:34.638 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:35.586 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:36.509 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:37.503 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:38.534 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:39.483 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:40.489 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:41.480 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:42.428 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:43.370 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:44.315 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:45.268 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:46.200 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:47.183 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:48.213 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:49.176 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:50.125 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:51.069 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:52.024 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:52.950 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:53.975 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:54.919 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:55.872 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:56.859 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:57.782 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:58.734 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:33:59.663 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:34:00.623 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:34:01.632 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:34:02.597 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:34:03.553 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:34:04.574 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'
+2023-10-18 07:34:05.559 Uncaught exception GET /_stcore/stream (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8501', method='GET', uri='/_stcore/stream', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.11/site-packages/tornado/websocket.py", line 937, in _accept_connection
+    open_result = handler.open(*handler.open_args, **handler.open_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/web/server/browser_websocket_handler.py", line 123, in open
+    self._session_id = self._runtime.connect_session(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 352, in connect_session
+    session_id = self._session_mgr.connect_session(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/runtime/websocket_session_manager.py", line 98, in connect_session
+    local_sources_watcher=LocalSourcesWatcher(script_data.main_script_path),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 55, in __init__
+    self._register_watcher(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/local_sources_watcher.py", line 103, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 174, in watch_path
+    folder_handler.add_path_change_listener(
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 274, in add_path_change_listener
+    md5 = util.calc_md5_with_blocking_retries(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 57, in calc_md5_with_blocking_retries
+    content = _get_file_content_with_blocking_retries(path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 100, in _get_file_content_with_blocking_retries
+    raise e
+  File "/home/vscode/.local/lib/python3.11/site-packages/streamlit/watcher/util.py", line 95, in _get_file_content_with_blocking_retries
+    with open(file_path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/template-streamlit/app.py'

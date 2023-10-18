@@ -19,17 +19,17 @@ LOGGER = get_logger(__name__)
 
 
 def run():
-    st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
-    )
+  st.set_page_config(
+      page_title="Hello",
+      page_icon="👋",
+  )
 
-    st.write("# Welcome to Streamlit! 👋")
+  st.write("# Welcome to Streamlit! 👋")
 
-    st.sidebar.success("Select a demo above.")
+  st.sidebar.success("Select a demo above.")
 
-    st.markdown(
-        """
+  st.markdown(
+      """
         Streamlit is an open-source app framework built specifically for
         Machine Learning and Data Science projects.
         **👈 Select a demo from the sidebar** to see some examples
@@ -44,8 +44,8 @@ def run():
           Dataset](https://github.com/streamlit/demo-self-driving)
         - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
     """
-    )
+  )
 
 
 if __name__ == "__main__":
-    run()
+  run()

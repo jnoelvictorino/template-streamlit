@@ -1,5 +1,20 @@
-altair
+# Core
 numpy
 pandas
+openpyxl
+xlsxwriter
+
+# Database
+pandasql
+psycopg2-binary
+sqlalchemy
+
+# Jupyter
+ipykernel
+
+# Visualization
+altair
 pydeck
+
+# Dashboard
 streamlit

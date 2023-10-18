@@ -1,0 +1,1 @@
+streamlit run Main.py --server.enableCORS false --server.enableXsrfProtection false &
