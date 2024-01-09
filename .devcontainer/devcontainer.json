@@ -4,7 +4,7 @@
   "service": "app",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "updateContentCommand": "bash .devcontainer/setupContainer.sh",
-  "postAttachCommand": "nohup bash -c 'bash .devcontainer/startServer.sh'",
+  // "postAttachCommand": "nohup bash -c 'bash .devcontainer/startServer.sh'",
   "portsAttributes": {
     "8501": {
       "label": "Application",
@@ -19,9 +19,9 @@
       "settings": {},
       "extensions": [
         "donjayamanne.githistory",
-        "GitHub.copilot",
-        "GitHub.copilot-chat",
-        "GitHub.copilot-labs",
+        // "GitHub.copilot",
+        // "GitHub.copilot-chat",
+        // "GitHub.copilot-labs",
         "ecmel.vscode-html-css",
         "ms-azuretools.vscode-docker",
         "ms-python.autopep8",
